@@ -1,7 +1,5 @@
 package br.com.livraria.ingary.models;
 
-import java.util.Date;
-
 public class Livro {
 
     private String capa;
@@ -13,10 +11,10 @@ public class Livro {
     private int paginacao;
     private  String editora;
     private String edicao;
-    private String anoLancamento;
+    private int anoLancamento;
     private String genero;
     private String idioma;
-    private String capaNormalCapaDura;
+    private String tipoCapa;
     private String CodigoBarra;
     private float preco;
     private int estoque;
@@ -93,11 +91,11 @@ public class Livro {
         this.edicao = edicao;
     }
 
-    public String getAnoLancamento() {
+    public int getAnoLancamento() {
         return anoLancamento;
     }
 
-    public void setAnoLancamento(String anoLancamento) {
+    public void setAnoLancamento(int anoLancamento) {
         this.anoLancamento = anoLancamento;
     }
 
@@ -117,12 +115,12 @@ public class Livro {
         this.idioma = idioma;
     }
 
-    public String getCapaNormalCapaDura() {
-        return capaNormalCapaDura;
+    public String getTipoCapa() {
+        return tipoCapa;
     }
 
-    public void setCapaNormalCapaDura(String capaNormalCapaDura) {
-        this.capaNormalCapaDura = capaNormalCapaDura;
+    public void setTipoCapa(String tipoCapa) {
+        this.tipoCapa = tipoCapa;
     }
 
     public String getCodigoBarra() {
